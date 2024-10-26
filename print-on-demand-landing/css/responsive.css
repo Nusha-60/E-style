@@ -1,0 +1,14 @@
+@media (max-width: 768px) {
+    .featured-products .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-categories .category-row {
+        grid-template-columns: 1fr;
+    }
+
+    .about-us .team-member {
+        flex-direction: column;
+        text-align: center;
+    }
+}

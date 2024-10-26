@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-style - Reset Password</title>
+    <link rel="stylesheet" href="D:\Print On Demand\e-style-login\css\style.css">
+    <style>
+        .password-rules {
+            margin-top: 20px;
+            list-style: none;
+            padding: 0;
+        }
+        .rule {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .rule input {
+            margin-right: 10px;
+            accent-color: green; /* For modern browsers */
+        }
+        .rule input:disabled {
+            accent-color: red;
+        }
+        .rule label {
+            margin: 0;
+        }
+        .success-message, .error-message {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            border-radius: 10px;
+            color: #fff;
+            font-weight: bold;
+            z-index: 1000;
+            text-align: center;
+        }
+        .success-message {
+            background-color: green;
+        }
+        .error-message {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">Reset Password</div>
+        <form action="" class="form" id="resetPasswordForm">
+            <input required class="input" type="password" name="newPassword" id="newPassword" placeholder="New Password">
+            <input required class="input" type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password">
+            
+            <span class="forgot-password"><a href="login.html">Back to Sign In</a></span>
+            <input class="login-button" type="submit" value="Reset Password">
+            
+            <div id="passwordRules" class="password-rules">
+                <div class="rule">
+                    <input type="checkbox" id="lengthCheck" disabled>
+                    <label id="lengthRule">At least 8 characters</label>
+                </div>
+                <div class="rule">
+                    <input type="checkbox" id="uppercaseCheck" disabled>
+                    <label id="uppercaseRule">At least 1 uppercase letter</label>
+                </div>
+                <div class="rule">
+                    <input type="checkbox" id="lowercaseCheck" disabled>
+                    <label id="lowercaseRule">At least 1 lowercase letter</label>
+                </div>
+                <div class="rule">
+                    <input type="checkbox" id="numberCheck" disabled>
+                    <label id="numberRule">At least 1 number</label>
+                </div>
+                <div class="rule">
+                    <input type="checkbox" id="specialCharCheck" disabled>
+                    <label id="specialCharRule">At least 1 special character</label>
+                </div>
+            </div>
+        </form>
+        <span class="agreement"><a href="#">Learn user license agreement</a></span>
+    </div>
+
+    <div class="success-message" id="successMessage">Your password has been reset successfully!</div>
+    <div class="error-message" id="errorMessage">Please ensure your password meets all the requirements!</div>
+
+    <script src="D:\Print On Demand\e-style-login\js\resetpass.js"></script>
+</body>
+</html>

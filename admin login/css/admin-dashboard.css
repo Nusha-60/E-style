@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(to right, #E0B0FF, #FFFFFF);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #cfb1cd 100%);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Circular logo */
+    margin-right: 10px; /* Space between logo and name */
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-icons {
+    display: flex;
+    margin-left: 20px;
+}
+
+.nav-icons i {
+    margin: 0 10px;
+    cursor: pointer;
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.nav-icons i:hover {
+    color: #FFD700; /* Change color on hover */
+}
+
+.search-bar {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: none;
+    padding: 10px;
+    background-color: #eee;
+    width: 100%;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    height: calc(100vh - 60px); /* Adjust height based on header */
+}
+
+.sidebar {
+    background: linear-gradient(0deg, #e7b0de 0%, #cfb1cd 100%);
+    color: #4f4f4f;
+    width: 220px; /* Sidebar width */
+    transition: width 0.3s ease;
+    padding: 15px;
+    height: 100%;
+    position: fixed; /* Keep sidebar fixed on scroll */
+}
+
+.sidebar.collapsed {
+    width: 0px; /* Collapsed width */
+}
+
+.toggle-btn {
+    cursor: pointer;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sidebar-option {
+    padding: 10px;
+    margin: 5px 0;
+    display: flex;
+    flex-direction: column; /* Align children vertically */
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s; /* Smooth background transition */
+}
+
+.sidebar-option:hover {
+    background-color: #a27dbd; /* Darker purple on hover */
+}
+
+.sidebar-option i {
+    margin-right: 10px;
+}
+
+.sub-option {
+    padding: 8px 20px;
+    margin: 5px 0;
+    cursor: pointer;
+    background-color: #af5fe9; /* Match parent background */
+    color: white; /* White text for sub-options */
+    border-radius: 5px;
+    display: none; /* Hidden by default */
+    transition: background 0.3s; /* Smooth background transition */
+}
+
+.sidebar-option:hover .sub-option {
+    display: flex; /* Show sub-option on hover */
+    flex-direction: row; /* Align sub-options horizontally */
+}
+
+.sub-option:hover {
+    background-color: #b25de0; /* Slightly darker on hover */
+}
+
+.sub-option i {
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    margin-left: 220px; /* Leave space for the sidebar */
+    transition: margin-left 0.3s; /* Smooth transition for main content */
+}
+
+.sidebar.collapsed + .main-content {
+    margin-left: 60px; /* Adjust margin when sidebar is collapsed */
+}
+
+.quick-stats, .graphical-overview, .recent-activity, .alerts {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #4B0082; /* Darker purple for footer */
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

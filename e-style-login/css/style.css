@@ -1,0 +1,253 @@
+/* Container Styling */
+.container {
+    max-width: 380px;
+    background: linear-gradient(0deg, #FFFFFF 0%, #F4F7FB 100%);
+    border-radius: 40px;
+    padding: 25px 35px;
+    border: 5px solid #FFF;
+    box-shadow: rgba(156, 98, 158, 0.88) 0px 30px 30px -20px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* Heading */
+.heading {
+    font-weight: 900;
+    font-size: 30px;
+    color: #d310d3;
+}
+
+/* Form Styling */
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Input Styling - all fields have same size */
+.input {
+    width: 90%;
+    background: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 20px;
+    margin-top: 15px;
+    box-shadow: #d38ccd 0px 10px 10px -5px;
+    border-inline: 2px solid transparent;
+}
+
+.input:focus {
+    outline: none;
+    border-inline: 2px solid #cb12d1;
+}
+
+/* Continue Button with arrow */
+.continue-button {
+    background-color: #6A5ACD;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    box-shadow: rgba(156, 98, 158, 0.88) 0px 20px 10px -15px;
+}
+
+.continue-button:hover {
+    background-color: #5A4BC2;
+    transform: scale(1.03);
+}
+
+.arrow {
+    font-size: 16px;
+}
+
+/* Sign-in link styling */
+.signin-link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.signin-link a {
+    text-decoration: none;
+    color: #411061;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+    }
+}
+
+
+/* Heading */
+.heading {
+    font-weight: 900;
+    font-size: 30px;
+    color: #d310d3;
+}
+
+/* Form Styling */
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Input Styling */
+.input {
+    width: 90%;
+    background: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 20px;
+    margin-top: 15px;
+    box-shadow: #d38ccd 0px 10px 10px -5px;
+    border-inline: 2px solid transparent;
+}
+
+.input:focus {
+    outline: none;
+    border-inline: 2px solid #cb12d1;
+}
+
+/* Forgot Password Link */
+.forgot-password {
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 11px;
+}
+
+.forgot-password a {
+    color: #3d0642;
+    text-decoration: none;
+}
+
+/* Login Button */
+.login-button {
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    background: linear-gradient(45deg, #89158d 0%, #360438 100%);
+    color: white;
+    padding-block: 15px;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: rgba(156, 98, 158, 0.88) 0px 20px 10px -15px;
+    border: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.login-button:hover {
+    transform: scale(1.03);
+    box-shadow: rgba(156, 98, 158, 0.88) 0px 23px 10px -20px;
+}
+
+.login-button:active {
+    transform: scale(0.95);
+}
+
+/* Social Account Styling */
+.social-account-container {
+    margin-top: 25px;
+}
+
+.social-account-container .title {
+    font-size: 10px;
+    color: #AAA;
+    margin-bottom: 5px;
+}
+
+.social-accounts {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Continue with Google Button */
+.social-button {
+    background: #4285F4; /* Google's brand color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.social-button:hover {
+    background-color: #357ae8; /* Darker shade for hover */
+}
+
+.social-button:active {
+    transform: scale(0.98);
+}
+
+/* Agreement Link */
+.agreement {
+    display: block;
+    margin-top: 15px;
+    font-size: 9px;
+}
+
+.agreement a {
+    text-decoration: none;
+    color: #411061;
+}
+
+/* Signup Link */
+.signup-link {
+    display: block;
+    margin-top: 15px;
+    font-size: 11px;
+}
+
+.signup-link a {
+    text-decoration: none;
+    color: #411061;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+    }
+}
+.phone-container {
+    display: flex;
+    align-items: center;
+}
+
+.country-code {
+    width: auto;
+    margin-right: 10px;
+}
+
+.phone-number {
+    flex-grow: 1;
+}
+
+.continue-button {
+    background-color: #6A5ACD; /* Example color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.continue-button:hover {
+    background-color: #5A4BC2; /* Darker shade for hover */
+}

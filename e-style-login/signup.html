@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-style - Sign Up</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heading">Sign Up</div>
+        <form action="" class="form" id="signup-form">
+            <!-- Selection input -->
+            <select class="input" name="role" id="role" required>
+                <option value="" disabled selected>Select your role</option>
+                <option value="Vendor">Vendor</option>
+                <option value="Designer">Designer</option>
+                <option value="Customer">Customer</option>
+            </select>
+            
+            <!-- Name and username inputs -->
+            <input required class="input" type="text" name="firstName" id="firstName" placeholder="First Name">
+            <input required class="input" type="text" name="lastName" id="lastName" placeholder="Last Name">
+            <input required class="input" type="text" name="username" id="username" placeholder="Username">
+
+            <!-- Email and phone number inputs -->
+            <input required class="input" type="email" name="email" id="email" placeholder="Email">
+            <input required class="input" type="text" name="phone" id="phone" placeholder="Phone Number">
+            
+            <!-- Date of birth input -->
+            <input required class="input" type="date" name="dob" id="dob" placeholder="Date of Birth">
+            
+            <!-- Continue button -->
+            <button class="continue-button" type="submit">
+                Continue <span class="arrow">→</span>
+            </button>
+        </form>
+        
+        <!-- Redirect to Sign In -->
+        <span class="signin-link">Already have an account? <a href="login.html">Sign In</a></span>
+    </div>
+    
+    <script src="js/signup.js"></script>
+</body>
+</html>

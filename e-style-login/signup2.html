@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-style - Verification</title>
+    <link rel="stylesheet" href="css/signup2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heading">Verify Your Account</div>
+        <form action="" class="form" id="verification-form">
+            <!-- Email/Phone Verification Section -->
+            <p class="verification-info">A verification code has been sent to your email or phone. Please enter the code below to complete the sign-up process.</p>
+            
+            <input required class="input" type="text" id="verification-code" placeholder="Enter Verification Code">
+            <span class="resend-code">Didn't receive the code? <a href="#">Resend Code</a></span>
+            
+            <!-- Complete Sign-Up Button -->
+            <button type="submit" class="complete-button">Verify & Complete <span>&rarr;</span></button>
+        </form>
+    </div>
+
+    <script src="js/verification.js"></script>
+    <script>
+        document.getElementById("verification-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            
+            // Redirect to pp.html after verification (add your verification logic here)
+            window.location.href = "pp.html"; // Change to your actual complete page
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+.container {
+    max-width: 380px;
+    background: linear-gradient(0deg, #FFFFFF 0%, #F4F7FB 100%);
+    border-radius: 40px;
+    padding: 25px 35px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.heading {
+    font-weight: 900;
+    font-size: 30px;
+    color: #470747;
+    margin-bottom: 20px;
+}
+
+.verification-info {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input {
+    width: 90%;
+    background: white;
+    padding: 15px 20px;
+    border-radius: 20px;
+    box-shadow: #d38ccd 0px 10px 10px -5px;
+    margin: 10px auto;
+    border: none;
+    outline: none;
+}
+
+.resend-code {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.complete-button {
+    background-color: #6A5ACD;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.complete-button:hover {
+    background-color: #5A4BC2;
+}
+/* Profile Container */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/* Profile Image */
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* This ensures a perfect circle */
+    border: 1px solid #29072b;
+    box-shadow: #d38ccd 0px 10px 10px -5px;
+    object-fit: cover; /* Ensures the image fills the container */
+    cursor: pointer;
+    overflow: hidden; /* Makes sure no content overflows the circle */
+}
+
+
+#username-display {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #555;
+    font-weight: bold;
+}

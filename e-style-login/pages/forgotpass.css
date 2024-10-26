@@ -1,0 +1,80 @@
+/* Container Styling */
+.container {
+    max-width: 380px;
+    background: linear-gradient(0deg, #FFFFFF 0%, #F4F7FB 100%);
+    border-radius: 40px;
+    padding: 25px 35px;
+    border: 5px solid #FFF;
+    box-shadow: rgba(156, 98, 158, 0.88) 0px 30px 30px -20px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* Heading */
+.heading {
+    font-weight: 900;
+    font-size: 30px;
+    color: #d310d3;
+}
+
+/* Form Styling */
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Input Styling */
+.input {
+    width: 90%; /* Adjusted width to allow space on both sides */
+    background: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 20px;
+    margin-top: 15px;
+    box-shadow: #d38ccd 0px 10px 10px -5px;
+    border-inline: 2px solid transparent;
+}
+
+.input:focus {
+    outline: none;
+    border-inline: 2px solid #cb12d1;
+}
+
+/* Login Button */
+.login-button {
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    background: linear-gradient(45deg, #89158d 0%, #360438 100%);
+    color: white;
+    padding-block: 15px;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: rgba(156, 98, 158, 0.88) 0px 20px 10px -15px;
+    border: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.login-button:hover {
+    transform: scale(1.03);
+    box-shadow: rgba(156, 98, 158, 0.88) 0px 23px 10px -20px;
+}
+
+.login-button:active {
+    transform: scale(0.95);
+}
+
+/* Agreement Link */
+.agreement {
+    display: block;
+    margin-top: 15px;
+    font-size: 9px;
+}
+
+.agreement a {
+    text-decoration: none;
+    color: #411061;
+}
